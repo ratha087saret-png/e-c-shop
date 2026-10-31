@@ -1,0 +1,36 @@
+/* Small local additions for the standalone, offline SSG version. */
+:root { scroll-behavior: smooth; }
+body.frontend-shell { min-height: 100vh; }
+#app { min-height: 100vh; display: flex; flex-direction: column; }
+#app > main { flex: 1 0 auto; }
+.navbar-brand { min-width: 110px; }
+.icon-inline { width: 1.1em; height: 1.1em; display: inline-block; vertical-align: -.15em; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.nav-search .form-control { min-width: 0; }
+.product-card .card-body { min-height: 205px; }
+.product-card h6 { line-height: 1.35; }
+.hero-slide { background-color: #333; background-repeat: no-repeat; }
+.hero-slide::before { background: linear-gradient(90deg, rgba(0,0,0,.66), rgba(0,0,0,.24)); }
+.hero-content { padding-top: 25px; padding-bottom: 25px; }
+.detail-card { background: transparent; }
+.detail-card .card-body { padding: 18px 24px; }
+.detail-thumb { border: 1px solid var(--border-soft); }
+.detail-thumb img { display: block; }
+.cart-line-controls { display:flex; align-items:center; gap:8px; }
+.cart-line-controls input { width:72px; }
+.checkout-item-image { width:52px; height:52px; object-fit:cover; border-radius:12px; }
+.invoice-ready { border:1px solid #d8eadb; background:#f4fbf5; border-radius:18px; padding:22px; }
+.invoice-preview { background:#fff; border:1px solid var(--border-soft); border-radius:18px; padding:24px; }
+.invoice-preview table { width:100%; }
+.invoice-preview th,.invoice-preview td { padding:10px 8px; border-bottom:1px solid #eee; text-align:left; }
+.invoice-preview th:last-child,.invoice-preview td:last-child { text-align:right; }
+button:disabled { opacity:.55; cursor:not-allowed; }
+@media (max-width: 767px) {
+  .navbar-clean .container { padding-top:7px; padding-bottom:7px; }
+  .hero-slide { background-position: center; }
+  .detail-card .card-body { padding: 22px 4px; }
+  .cart-card .card-body { padding:14px; }
+}
+.feature-symbol { display:inline-flex; width:30px; flex:0 0 30px; align-items:flex-start; justify-content:flex-start; font-size:1.55rem; line-height:1; }
+.feature-symbol .icon-inline { width:25px; height:25px; }
+.bag-icon { display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px; }
+.nav-menu-icon { font-size:1.3rem; line-height:1; }
